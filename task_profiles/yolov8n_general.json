@@ -1,0 +1,32 @@
+{
+  "task_name": "YOLOv8n - Общая детекция",
+  "model_path": "yolov8n.pt",
+  "task_type": "detection",
+
+  "counting_zone": {
+    "x_start": 0.0,
+    "x_end": 1.0,
+    "enabled": false
+  },
+
+  "visualization": {
+    "show_labels": true,
+    "label_format": "#{id}",
+    "box_color_default": [255, 165, 0],
+    "box_color_in_zone": [0, 255, 0],
+    "zone_color": [0, 255, 255]
+  },
+
+  "detection": {
+    "confidence": 0.25,
+    "iou": 0.45,
+    "target_class": null
+  },
+
+  "processing": {
+    "use_barcode_reading": false,
+    "use_tracking": true,
+    "tracker_max_age": 30,
+    "tracker_max_distance": 100
+  }
+}

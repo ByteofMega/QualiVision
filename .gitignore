@@ -1,0 +1,15 @@
+# Среда разработки и кэш
+.venv/
+venv/
+__pycache__/
+.idea/
+
+# Папки сборки PyInstaller
+build/
+dist/
+*.spec
+
+# Исключаем видео и случайные фото, но ОСТАВЛЯЕМ .pt
+*.mp4
+*.avi
+screenshot_*.jpg

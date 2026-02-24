@@ -1,0 +1,32 @@
+{
+  "task_name": "Сканирование штрихкодов",
+  "model_path": "models/barcodes.pt",
+  "task_type": "barcode_scanning",
+
+  "counting_zone": {
+    "x_start": 0.1,
+    "x_end": 0.9,
+    "enabled": true
+  },
+
+  "visualization": {
+    "show_labels": true,
+    "label_format": "ID #{id} | {data}",
+    "box_color_default": [255, 0, 0],
+    "box_color_in_zone": [0, 255, 0],
+    "zone_color": [0, 255, 255]
+  },
+
+  "detection": {
+    "confidence": 0.35,
+    "iou": 0.45,
+    "target_class": null
+  },
+
+  "processing": {
+    "use_barcode_reading": true,
+    "use_tracking": true,
+    "tracker_max_age": 30,
+    "tracker_max_distance": 100
+  }
+}
